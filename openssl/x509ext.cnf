@@ -1,0 +1,19 @@
+[ ext_v3_ca ]
+basicConstraints               = critical, CA:TRUE, pathlen:0
+keyUsage                       = critical, keyCertSign, cRLSign
+extendedKeyUsage               = serverAuth, clientAuth
+subjectKeyIdentifier           = hash
+# subjectAltName               = copy from req
+# crlDistributionPoints        =
+# authorityInfoAccess          =
+
+[ ext_v3 ]
+basicConstraints               = critical, CA:FALSE
+keyUsage                       = critical, digitalSignature
+extendedKeyUsage               = serverAuth, clientAuth
+subjectKeyIdentifier           = hash
+authorityKeyIdentifier         = keyid,issuer:always
+# subjectAltName               = copy from req
+issuerAltName                  = issuer:copy
+# crlDistributionPoints        =
+# authorityInfoAccess          =

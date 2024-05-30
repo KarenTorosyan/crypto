@@ -1,0 +1,21 @@
+{
+  "configuration": {
+    "status": "warn",
+    "appenders": {
+      "Console": {
+        "name": "Console",
+        "PatternLayout": {
+          "pattern": "[%t] %-5level%logger{36} - %m%n"
+        }
+      }
+    },
+    "loggers": {
+      "root": {
+        "level": "info",
+        "AppenderRef": {
+          "ref": "Console"
+        }
+      }
+    }
+  }
+}
