@@ -314,7 +314,7 @@ preconfigured, `-extensions ext_v3_ca` for sign CA
 
 `openssl pkeyutl -derive -inkey dhprivateA.key -peerkey dhpublicB.key -out secretA.bin`
 
-`openssl pkeyutl -derive -inkey dhprivateB.key -peerkey dhpublicB.key -out secretB.bin`
+`openssl pkeyutl -derive -inkey dhprivateB.key -peerkey dhpublicA.key -out secretB.bin`
 
 `openssl dgst -sha256 secretA.bin && openssl dgst -sha256 secretB.bin` hashes must be equals
 
