@@ -195,7 +195,7 @@ AES-256-CBC PBKDF2-HmacSHA-256
 
 [openssl req](https://www.openssl.org/docs/manmaster/man1/openssl-req.html)
 
-`openssl req -new -key private.key -out cert.csr -digest -addext "subjectAltName=DNS.1:x1,DNS.2:x2"`
+`openssl req -new -key private.key -out cert.csr -digest -addext "subjectAltName=DNS.1:localhost,DNS.2:osname,IP.1:127.0.0.1,IP.2:192.168.0.100"`
 
 `openssl req -in cert.csr -verify -text -noout`
 
