@@ -301,6 +301,8 @@ preconfigured, `-extensions ext_v3_ca` for sign CA
 
 `openssl pkcs12 -export -in fullchainandkey.pem -name name -out name.keystore.p12` export cert chain and key
 
+`openssl pkcs12 -export -in cert.pem -name name -out name.keystore.p12 -nokeys` export only cert or cert chain
+
 `keytool -importkeystore -srckeystore name.keystore.p12 -destkeystore keystore.p12` import all, `-alias name` import one
 
 `keytool -list -keystore keystore.p12` read entries, `-alias name` read entry, `-v` details
